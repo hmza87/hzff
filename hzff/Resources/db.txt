@@ -1,0 +1,22 @@
+CREATE TABLE files
+(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_folder INTEGER,
+    name TEXT,
+    title TEXT,
+    create_date TEXT,
+    maj_date TEXT,
+    deleted INT DEFAULT 0 NOT NULL,
+    path TEXT,
+    icon TEXT
+);
+CREATE TABLE folders
+(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    title TEXT,
+    create_date TEXT,
+    maj_date TEXT,
+    deleted INT DEFAULT 0 NOT NULL,
+    icon TEXT
+);

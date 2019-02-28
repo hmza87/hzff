@@ -1,0 +1,14 @@
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\Debug\hzff.exe.config
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\Debug\hzff.exe
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\Debug\hzff.pdb
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.csprojResolveAssemblyReference.cache
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.Form1.resources
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.Properties.Resources.resources
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.csproj.GenerateResource.Cache
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.exe
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.pdb
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\Debug\System.Data.SQLite.dll
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\Debug\System.Data.SQLite.pdb
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\Interop.Shell32.dll
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\hzff.csproj.ResolveComReference.cache
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\Debug\Interop.IWshRuntimeLibrary.dll

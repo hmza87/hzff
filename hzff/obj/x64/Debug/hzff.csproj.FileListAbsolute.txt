@@ -1,0 +1,15 @@
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\x64\Debug\hzff.exe.config
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\Interop.Shell32.dll
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.csproj.ResolveComReference.cache
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\x64\Debug\hzff.exe
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\bin\x64\Debug\hzff.pdb
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.Form1.resources
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.Properties.Resources.resources
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.csproj.GenerateResource.Cache
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.exe
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.pdb
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.csprojResolveAssemblyReference.cache
+c:\users\hamza\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.views.createFolder.resources
+C:\Users\HAMZA\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.views.wFolder.resources
+C:\Users\HAMZA\documents\visual studio 2013\Projects\hzff\hzff\obj\x64\Debug\hzff.nFolder.resources
