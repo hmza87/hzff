@@ -37,6 +37,7 @@ namespace hzff
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.settings = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.createDesktopShortcutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addAFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileMenu.SuspendLayout();
             this.settings.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,7 @@ namespace hzff
             this.lst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lst.Location = new System.Drawing.Point(0, 0);
             this.lst.Name = "lst";
-            this.lst.Size = new System.Drawing.Size(489, 205);
+            this.lst.Size = new System.Drawing.Size(632, 268);
             this.lst.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.lst.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.lst.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -57,6 +58,7 @@ namespace hzff
             this.lst.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.lst.Style.GradientAngle = 90;
             this.lst.TabIndex = 0;
+            this.lst.Click += new System.EventHandler(this.lst_Click_1);
             // 
             // fileMenu
             // 
@@ -64,7 +66,7 @@ namespace hzff
             this.modifierToolStripMenuItem,
             this.supprimerToolStripMenuItem});
             this.fileMenu.Name = "fileMenu";
-            this.fileMenu.Size = new System.Drawing.Size(130, 48);
+            this.fileMenu.Size = new System.Drawing.Size(153, 70);
             // 
             // modifierToolStripMenuItem
             // 
@@ -75,8 +77,9 @@ namespace hzff
             // supprimerToolStripMenuItem
             // 
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.supprimerToolStripMenuItem.Text = "Supprimer";
+            this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click_1);
             // 
             // styleManager1
             // 
@@ -86,9 +89,10 @@ namespace hzff
             // settings
             // 
             this.settings.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addAFileToolStripMenuItem,
             this.createDesktopShortcutToolStripMenuItem});
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(203, 26);
+            this.settings.Size = new System.Drawing.Size(203, 48);
             // 
             // createDesktopShortcutToolStripMenuItem
             // 
@@ -97,14 +101,23 @@ namespace hzff
             this.createDesktopShortcutToolStripMenuItem.Text = "Create Desktop Shortcut";
             this.createDesktopShortcutToolStripMenuItem.Click += new System.EventHandler(this.createDesktopShortcutToolStripMenuItem_Click);
             // 
+            // addAFileToolStripMenuItem
+            // 
+            this.addAFileToolStripMenuItem.Name = "addAFileToolStripMenuItem";
+            this.addAFileToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.addAFileToolStripMenuItem.Text = "Add File";
+            this.addAFileToolStripMenuItem.Click += new System.EventHandler(this.addAFileToolStripMenuItem_Click);
+            // 
             // nFolder
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 205);
+            this.ClientSize = new System.Drawing.Size(632, 268);
             this.Controls.Add(this.lst);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "nFolder";
@@ -130,5 +143,6 @@ namespace hzff
         private DevComponents.DotNetBar.StyleManager styleManager1;
         private System.Windows.Forms.ContextMenuStrip settings;
         private System.Windows.Forms.ToolStripMenuItem createDesktopShortcutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addAFileToolStripMenuItem;
     }
 }

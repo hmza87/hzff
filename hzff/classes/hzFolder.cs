@@ -22,6 +22,9 @@ namespace hzff.classes {
         public string create_date { get; set; }
         public string maj_date { get; set; }
 
+        public int width { get; set; }
+        public int height { get; set; }
+
         public List<hzShortcut> _files;
 
 
@@ -83,10 +86,12 @@ namespace hzff.classes {
             
         }
 
-        public hzFolder(string name, string title, string icon, int id, string cdate, string udate)
+        public hzFolder(string name, string title, string icon, int id, string cdate, string udate, int height, int width)
         {
             this.name = name; this.title = title; this.icon = icon; this.id_folder = id;
             this.maj_date = udate; this.create_date = cdate;
+            this.height = height;
+            this.width = width;
             _files = get_files();
         }
         public hzFolder(string name, string title)
@@ -170,6 +175,13 @@ namespace hzff.classes {
 
             f.Top = top; f.Left = left;
             return true;
+        }
+
+        public void updateSize(int height, int width)
+        {
+            this.height = height; this.width = width;
+            var db = new DB();
+            db.nonQuery(String.Format("UPDATE folders SET height = {0}, width = {1} WHERE id = {2}", height.ToString(), width.ToString(), id_folder));
         }
 
         public void addFileByPath(string filepath)

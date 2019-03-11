@@ -74,11 +74,17 @@ namespace hzff
 
         void folder_ResizeEnd(object sender, EventArgs e)
         {
+            afolder.updateSize(Height, Width);
             initItems();
         }
 
         void initItems()
         {
+            if (afolder.height > 0 && afolder.width > 0)
+            {
+                this.Height = afolder.height;
+                this.Width = afolder.width;
+            }
             lst.Controls.Clear();
             var point = new Point(-100, 0);
             foreach (var item in afolder._files)
@@ -187,7 +193,7 @@ namespace hzff
 
         private void wFolder_Leave(object sender, EventArgs e)
         {
-            Close();
+            //Close();
         }
 
         private void supprimerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -207,7 +213,34 @@ namespace hzff
 
         private void nFolder_SettingsButtonClick(object sender, EventArgs e)
         {
-            settings.Show((Control) sender, new Point(0,0));
+            settings.Show(new Point(Left + Width - 120, Top));
+        }
+
+        private void lst_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addAFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var o = new OpenFileDialog())
+            {
+                if (o.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    afolder.addFileByPath(o.FileName);
+                    initItems();
+                }
+            }
+        }
+
+        private void supprimerToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var btn = (ButtonX)fileMenu.Tag;
+            var file = (hzShortcut)btn.Tag;
+            file.delete();
+            afolder._files = afolder.get_files();
+            afolder.updateIcon();
+            initItems();
         }
     }
 }

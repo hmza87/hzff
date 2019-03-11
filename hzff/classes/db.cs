@@ -50,7 +50,7 @@ namespace hzff.classes
 
             while (reader.Read())
             {
-                data.Add(new hzFolder(reader["name"].ToString(), reader["title"].ToString(), reader["icon"].ToString(), int.Parse(reader["id"].ToString()), reader["create_date"].ToString(), reader["maj_date"].ToString()));
+                data.Add(new hzFolder(reader["name"].ToString(), reader["title"].ToString(), reader["icon"].ToString(), int.Parse(reader["id"].ToString()), reader["create_date"].ToString(), reader["maj_date"].ToString(), int.Parse(reader["height"].ToString() ?? "0"), int.Parse(reader["width"].ToString() ?? "0")));
             }
 
 
@@ -87,7 +87,7 @@ namespace hzff.classes
 
             while (reader.Read())
             {
-                folder = new hzFolder(reader["name"].ToString(), reader["title"].ToString(), reader["icon"].ToString(), id, reader["create_date"].ToString(), reader["maj_date"].ToString());
+                folder = new hzFolder(reader["name"].ToString(), reader["title"].ToString(), reader["icon"].ToString(), id, reader["create_date"].ToString(), reader["maj_date"].ToString(), int.Parse(reader["height"].ToString()), int.Parse(reader["with"].ToString()));
             }
 
             cnx.Close();
@@ -136,6 +136,16 @@ namespace hzff.classes
             
             cnx.Close();
             return new hzShortcut(name, title, path, icon, id_folder);
+        }
+
+        public void nonQuery(string sql_commande)
+        {
+            cnx.Open();
+            string sql = sql_commande;
+            SQLiteCommand command = new SQLiteCommand(sql, cnx);
+            command.ExecuteNonQuery();
+            cnx.Close();
+           
         }
     }
 }
